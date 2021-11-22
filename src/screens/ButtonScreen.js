@@ -3,7 +3,6 @@ import { StyleSheet, Button } from 'react-native'
 
 import { testProperties } from '../utility/helper'
 
-
 const ButtonScreen = ({ navigation }) => {
   return (
     <>

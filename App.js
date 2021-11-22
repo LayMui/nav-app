@@ -11,13 +11,12 @@ const navigator = createStackNavigator(
     Home: HomeScreen,
     Button: ButtonScreen,
     Calendar: CalendarScreen,
-   
   },
   {
     initialRouteName: 'Home',
-    defaultNavigationOptions: {
-      title: 'Design System Testing',
-    },
+    navigationOptions: ({ navigation }) => ({
+      title: `${navigation.state.params.name}'s Profile'`,
+    }),
   }
 )
 
