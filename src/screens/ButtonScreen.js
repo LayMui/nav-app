@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { StyleSheet, Button } from 'react-native'
 
 import { testProperties } from '../utility/helper'
 
 const ButtonScreen = ({ navigation }) => {
+
+  const [value, setValue] = useState('white')
+
+  const change = () => {
+    this.value == 'red' ? (this.value = 'white') : (this.value = 'red')
+    setValue(this.value)
+  }
   return (
     <>
       <Button
@@ -11,6 +18,13 @@ const ButtonScreen = ({ navigation }) => {
         title='Learn More'
         color='#841584'
         {...testProperties('CustomButton')}
+      />
+
+      <Button
+        onPress={change}
+        title={value}
+        color={value}
+        {...testProperties('ChangeButton')}
       />
     </>
   )
