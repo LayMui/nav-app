@@ -8,20 +8,40 @@ const HomeScreen = ({ navigation }) => {
     <>
       <View style={styles.container}>
         <Text
-          {...testProperties('Button')}
+          {...testProperties('NewCreation')}
           style={styles.title}
           onPress={() => navigation.navigate('Button')}
         >
-          Button
+          I am a New Creation
         </Text>
+      </View>
+      <View style={styles.container}>
+        <Text
+          {...testProperties('DaughterOfKingdom')}
+          style={styles.title}
+          onPress={() => navigation.navigate('Button')}
+        >
+          I am a daughter of the Kingdom
+        </Text>
+      </View>
+      <View style={styles.container}>
         <Text
           {...testProperties('Calendar')}
           style={styles.title}
           onPress={() => navigation.navigate('Calendar')}
         >
-          Calendar
+          Have A Date with the King
         </Text>
-       
+      </View>
+
+      <View style={styles.container}>
+        <Text
+          {...testProperties('AhuaTextInput')}
+          style={styles.title}
+          onPress={() => navigation.navigate('AhuaTextInput')}
+        >
+          Ahua TextInput
+        </Text>
       </View>
     </>
   )
@@ -29,8 +49,7 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    padding: 4,
+    padding: 1,
     backgroundColor: '#eaeaea',
   },
   title: {
@@ -42,7 +61,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#61dafb',
     color: '#20232a',
     textAlign: 'center',
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: 'bold',
   },
 })

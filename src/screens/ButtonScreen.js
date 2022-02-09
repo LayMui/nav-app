@@ -5,10 +5,10 @@ import { testProperties } from '../utility/helper'
 
 const ButtonScreen = ({ navigation }) => {
 
-  const [value, setValue] = useState('white')
+  const [value, setValue] = useState('black')
 
   const change = () => {
-    this.value == 'red' ? (this.value = 'white') : (this.value = 'red')
+    this.value == 'red' ? (this.value = 'black') : (this.value = 'red')
     setValue(this.value)
   }
   return (
