@@ -36,7 +36,7 @@ const HomeScreen = ({ navigation }) => {
 
       <View style={styles.container}>
         <Text
-          {...testProperties('AhuaTextInput')}
+          {...testProperties('AhuaTextInputButton')}
           style={styles.title}
           onPress={() => navigation.navigate('AhuaTextInput')}
         >
