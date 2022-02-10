@@ -11,14 +11,26 @@ const AhuaTextInputScreen = ({ navigation }) => {
   return (
     <>
       <View style={styles.container}>
-        <Text>Enter mobile Number:</Text>
-        <AhuaTextInput {...testProperties('AhuaTextInput', true)} />
+        <TextInput
+          style={{ height: 40, color: 'red' }}
+          keyboardType='numeric'
+          placeholder='Enter your name:'
+          onChangeText={(newText) => setText(newText)}
+          {...testProperties('NameInput')}
+        />
         <TextInput
           style={{ height: 40, color: 'red' }}
           keyboardType='numeric'
           placeholder='Enter your mobile number!'
           onChangeText={(newText) => setText(newText)}
           {...testProperties('PhoneNumberInput')}
+        />
+        <AhuaTextInput
+          allowFill={true}
+          keyboardType='numeric'
+          inputText='222222'
+          onChange={(newText) => setText(newText)}
+          {...testProperties('AhuaTextInput')}
         />
       </View>
     </>

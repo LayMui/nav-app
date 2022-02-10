@@ -12,16 +12,7 @@ const HomeScreen = ({ navigation }) => {
           style={styles.title}
           onPress={() => navigation.navigate('Button')}
         >
-          I am a New Creation
-        </Text>
-      </View>
-      <View style={styles.container}>
-        <Text
-          {...testProperties('DaughterOfKingdom')}
-          style={styles.title}
-          onPress={() => navigation.navigate('Button')}
-        >
-          I am a daughter of the Kingdom
+          Button Event 
         </Text>
       </View>
       <View style={styles.container}>
@@ -30,7 +21,7 @@ const HomeScreen = ({ navigation }) => {
           style={styles.title}
           onPress={() => navigation.navigate('Calendar')}
         >
-          Have A Date with the King
+          Calendar
         </Text>
       </View>
 
